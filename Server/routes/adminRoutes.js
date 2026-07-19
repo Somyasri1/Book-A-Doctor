@@ -8,7 +8,7 @@ const {
   getStatusRejectController,
   displayAllAppointmentController,
   getDashboardStatsController,
-} = require("../controllers/adminController");
+} = require("../controllers/AdminController");
 
 const router = express.Router();
 

@@ -10,7 +10,7 @@ const DoctorAppointments = () => {
       const user = JSON.parse(localStorage.getItem("userData"));
 
       const res = await axios.post(
-        "http://localhost:8001/api/doctor/getDoctorAppointments",
+        "https://book-a-doctor-1-rwew.onrender.com/api/doctor/getDoctorAppointments",
         {
           userId: user._id,
         },
@@ -32,7 +32,7 @@ const DoctorAppointments = () => {
   const updateStatus = async (appointmentId, status) => {
   try {
     const res = await axios.post(
-      "http://localhost:8001/api/doctor/updateAppointmentStatus",
+      "https://book-a-doctor-1-rwew.onrender.com/api/doctor/updateAppointmentStatus",
       {
         appointmentId,
         status,

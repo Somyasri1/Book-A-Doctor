@@ -21,7 +21,7 @@ const EditDoctorProfile = () => {
   const getDoctorInfo = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:8001/api/doctor/getDoctorInfo",
+        "https://book-a-doctor-1-rwew.onrender.com/api/doctor/getDoctorInfo",
         {
           userId: user._id,
         },
@@ -47,7 +47,7 @@ const EditDoctorProfile = () => {
   const updateDoctorProfile = async () => {
   try {
     const res = await axios.post(
-      "http://localhost:8001/api/doctor/updateDoctorProfile",
+      "https://book-a-doctor-1-rwew.onrender.com/api/doctor/updateDoctorProfile",
       {
         ...doctor,
         userId: user._id,

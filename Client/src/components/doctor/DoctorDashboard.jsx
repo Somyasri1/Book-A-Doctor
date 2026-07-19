@@ -70,7 +70,7 @@ const DoctorDashboard = () => {
     try {
 
       const res = await axios.post(
-        "http://localhost:8001/api/doctor/getDoctorAppointments",
+        "https://book-a-doctor-1-rwew.onrender.com/api/doctor/getDoctorAppointments",
         {
           userId: user._id,
         },
@@ -101,7 +101,7 @@ const DoctorDashboard = () => {
   const getDoctorInfo = async () => {
   try {
     const res = await axios.post(
-      "http://localhost:8001/api/doctor/getDoctorInfo",
+      "https://book-a-doctor-1-rwew.onrender.com/api/doctor/getDoctorInfo",
       {
         userId: user._id,
       },
@@ -126,7 +126,7 @@ const DoctorDashboard = () => {
     try{
 
       const res = await axios.post(
-        "http://localhost:8001/api/doctor/updateAppointmentStatus",
+        "https://book-a-doctor-1-rwew.onrender.com/api/doctor/updateAppointmentStatus",
         {
           appointmentId:id,
           status

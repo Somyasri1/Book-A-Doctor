@@ -20,7 +20,7 @@ console.log("USER ID:", userId);
   const getAppointments = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:8001/api/user/getUserAppointments",
+        "https://book-a-doctor-1-rwew.onrender.com/api/user/getUserAppointments",
         { userId },
         {
           headers: {
@@ -52,7 +52,7 @@ console.log("RESPONSE DATA:", JSON.stringify(res.data, null, 2));
   try {
 
     const res = await axios.post(
-  "http://localhost:8001/api/user/cancelAppointment",
+  "https://book-a-doctor-1-rwew.onrender.com/api/user/cancelAppointment",
   {
     appointmentId,
   },

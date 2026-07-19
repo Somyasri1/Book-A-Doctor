@@ -40,7 +40,7 @@ const ApplyDoctor = () => {
 
       const res = await axios.post(
 
-        "http://localhost:8001/api/doctor/applyDoctor",
+        "https://book-a-doctor-1-rwew.onrender.com/api/doctor/applyDoctor",
 
         {
           ...doctor,

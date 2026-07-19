@@ -24,7 +24,7 @@ const Notification = () => {
   const handleAllMarkRead = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:8001/api/user/getallnotification",
+        "https://book-a-doctor-1-rwew.onrender.com/api/user/getallnotification",
         { userId: user._id },
         {
           headers: {
@@ -63,7 +63,7 @@ const Notification = () => {
   const handleDeleteAllMark = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:8001/api/user/deleteallnotification",
+        "https://book-a-doctor-1-rwew.onrender.com/api/user/deleteallnotification",
         { userId: user._id },
         {
           headers: {

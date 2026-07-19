@@ -28,7 +28,7 @@ const Register = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8001/api/user/register",
+        "https://book-a-doctor-1-rwew.onrender.com/api/user/register",
         user
       );
 

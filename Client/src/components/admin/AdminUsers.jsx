@@ -10,7 +10,7 @@ const AdminUsers = () => {
   const getUsers = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8001/api/admin/getAllUsers"
+        "https://book-a-doctor-1-rwew.onrender.com/api/admin/getAllUsers"
       );
 
       if (res.data.success) {

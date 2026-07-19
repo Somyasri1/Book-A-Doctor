@@ -33,7 +33,7 @@ const UserHome = () => {
     try {
 
       const res = await axios.get(
-        "http://localhost:8001/api/admin/getApprovedDoctors"
+        "https://book-a-doctor-1-rwew.onrender.com/api/admin/getApprovedDoctors"
       );
 
 
@@ -57,7 +57,7 @@ const UserHome = () => {
     try{
 
       const res = await axios.post(
-        "http://localhost:8001/api/user/getUserNotifications",
+        "https://book-a-doctor-1-rwew.onrender.com/api/user/getUserNotifications",
         {
           userId:user._id
         },
@@ -200,7 +200,7 @@ onClick={async()=>{
 
 await axios.post(
 
-"http://localhost:8001/api/user/deleteallnotification",
+"https://book-a-doctor-1-rwew.onrender.com/api/user/deleteallnotification",
 
 {
 userId:user._id

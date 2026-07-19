@@ -26,7 +26,7 @@ const [time, setTime] = useState("");
 
     try {
       const res = await axios.post(
-        "http://localhost:8001/api/user/book-appointment",
+        "https://book-a-doctor-1-rwew.onrender.com/api/user/book-appointment",
         
         {
   doctorInfo: doctor,

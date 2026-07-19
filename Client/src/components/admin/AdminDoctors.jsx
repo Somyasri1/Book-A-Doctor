@@ -10,7 +10,7 @@ const AdminDoctors = () => {
   const getDoctors = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8001/api/admin/getAllDoctors"
+        "https://book-a-doctor-1-rwew.onrender.com/api/admin/getAllDoctors"
       );
 
       if (res.data.success) {
@@ -30,8 +30,8 @@ const AdminDoctors = () => {
     try {
       const url =
         status === "approved"
-          ? "http://localhost:8001/api/admin/getStatusApprove"
-          : "http://localhost:8001/api/admin/getStatusReject";
+          ? "https://book-a-doctor-1-rwew.onrender.com/api/admin/getStatusApprove"
+          : "https://book-a-doctor-1-rwew.onrender.com/api/admin/getStatusReject";
 
       const res = await axios.post(url, {
         doctorId: doctor._id,
